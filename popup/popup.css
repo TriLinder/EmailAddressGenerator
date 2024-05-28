@@ -1,0 +1,68 @@
+body {
+    font-family: sans-serif;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: rgb(42, 42, 42);
+        color: white;  
+    }
+
+    code {
+        background-color: rgb(60, 60, 60);
+    }
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        background-color: white;
+        color: black;  
+    }
+
+    code {
+        background-color: rgb(230, 230, 230);
+    }
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+
+    overflow: hidden;
+    padding: 25px;
+}
+
+h1 {
+    font-size: 1rem;
+    
+    border-bottom-style: solid;
+    border-bottom-width: 2px;
+    border-bottom-color: white;
+    
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-bottom: 0;
+}
+
+code {
+    padding: 5px;
+    font-size: 0.75rem;
+}
+
+button {
+    padding: 5px 15px;
+    font-size: 0.75rem;
+    font-weight: bold;
+    background-color: rgb(110, 85, 250);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: rgb(115, 90, 255);
+}

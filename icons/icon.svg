@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <defs/>
+  <style>
+    text {
+      fill: rgb(42, 42, 42);
+      dominant-baseline: middle;
+      text-anchor: middle;
+    }
+
+    @media(prefers-color-scheme:dark) {
+      text {
+        fill: white;
+      }
+    }
+  </style>
+
+  <text style="font-family: sans-serif; font-size: 400px; fill: rgb(255, 255, 255); white-space: pre;" x="50%" y="50%">@</text>
+</svg>
