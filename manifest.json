@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "Email Address Generator",
-    "version": "1.0",
+    "version": "1.1",
     "description": "Generates unique email addresses based on the website hostname and the current time.",
     "icons": {
         "48": "icons/icon.svg"
