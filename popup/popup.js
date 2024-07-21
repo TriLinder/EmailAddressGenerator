@@ -2,6 +2,8 @@ document.addEventListener("DOMContentLoaded", function() {
     const statusElement = document.querySelector("#status");
     const emailAddressElement = document.querySelector("#email-address");
     const copyButtonElement = document.querySelector("#copy-button");
+    const setDomainPrompt = document.querySelector("#set-domain-prompt");
+    const openSettingsLink = document.querySelector("#open-settings-link");
 
     let currentEmailAddress = "";
 
@@ -30,6 +32,8 @@ document.addEventListener("DOMContentLoaded", function() {
         try {
             currentEmailAddress = await generateEmailAddress();
             emailAddressElement.innerText = currentEmailAddress;
+
+            setDomainPrompt.style.display = await getEmailDomain() == "example.com" ? "block" : "none";
         } catch(e) {
             showStatus(e, 5000);
         }
@@ -40,4 +44,5 @@ document.addEventListener("DOMContentLoaded", function() {
     update();
     copyButtonElement.addEventListener("click", copy);
     emailAddressElement.addEventListener("click", copy);
+    openSettingsLink.addEventListener("click", function() {browser.runtime.openOptionsPage();});
 });
