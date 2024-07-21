@@ -5,7 +5,7 @@
 </head>
 <body>
     <div>
-        <p>Use the <code>CTRL + ALT + E</code> shortcut to quickly fill an input.</p>
+        <p class="tip"><b>TIP:</b> Use the <code>CTRL + ALT + E</code> shortcut to quickly fill an input on a website.</p>
         <p id="error"></p>
 
         <label>
@@ -14,9 +14,23 @@
         </label> <br>
 
         <button>Set</button>
+
+        <br>
+
+        <p><a href="https://github.com/TriLinder/EmailAddressGenerator">Source code</a></p>
     </div>
 
     <script src="../generate-address.js"></script>
     <script src="options.js"></script>
 </body>
+
+<style>
+    .tip {
+        border-style: solid;
+        border-color: green;
+        padding: 5px;
+        margin: 3px;
+    }
+</style>
+
 </html>

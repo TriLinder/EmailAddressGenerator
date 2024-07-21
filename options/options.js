@@ -22,5 +22,8 @@ document.addEventListener("DOMContentLoaded", function() {
     }
 
     load();
-    setButton.addEventListener("click", save);
+    setButton.addEventListener("click", function() {
+        save();
+        alert("Value set :)");
+    });
 });
